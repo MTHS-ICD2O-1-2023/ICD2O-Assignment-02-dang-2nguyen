@@ -2,31 +2,41 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Calculate square" />
+  <meta name="description" content="Calculate perimeter of a square" />
   <meta name="keywords" content="mths, ics2o" />
   <meta name="author" content="Dang" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-yellow.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Calculate square </title>
+  <title>Calculate perimeter of a square </title>
 </head>
 <body>
-  <h1 class="H1"> The perimeter of a square</h1>
-  <img src="./images/Square-Perimeter-582x267.png" alt="Formula for perimeter of square" class="pic">
+  <h1 class="mdl-layout__header"> The Perimeter Of A Square</h1>
+  <div class="all">
   <center>
+    <img src="./images/Square-Perimeter-582x267.png" alt="Formula for perimeter of square" class="pic" />
   <div id="wrap">
-    <p>Perimeter</p>
-  <label class="mylabel">s</label>
-  <input type="text" id="myInput2"><br><br>
-  <button id="myBtn" class="button">Get perimeter of square</button>
+    <h2>Perimeter</h2>
+    <!-- Numeric Textfield -->
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lenght-of-square" >
+      <label class="mdl-textfield__label" for="lenght-of-square">Put your length over here</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <button id="myBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="doMath()">Get perimeter of square</button>
+    </form> 
   <H3 id="myH3"></H3>
   </div>
   </center>
-  <script src="./js/script.js"></script>
+  <script src="./js/script2.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </div>
 </body>
 </html>

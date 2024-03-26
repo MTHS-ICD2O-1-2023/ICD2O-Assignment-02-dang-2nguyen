@@ -10,7 +10,7 @@ const sq = 4;
 
 document.getElementById("myBtn").onclick = function(){
 s = document.getElementById("myInput2").value;
-myInput2 = Number(myInput2)
-perimeter = s * sq;
+s = Number(s);
+const perimeter = s * sq;
 document.getElementById("myH3").textContent = perimeter + " cm";
 }
